@@ -1,0 +1,47 @@
+<resources>
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert"/>
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="preference_base" parent="@style/Base.TextAppearance.AppCompat">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColorHint">?android:textColorSecondary</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="preference_title" parent="@style/preference_base">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/WHITE</item>
+    </style>
+    <style name="spinner_text" parent="@style/preference_base">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/BLACK</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="widget_base_text" parent="@style/spinner_text">
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+    </style>
+    <style name="button_text" parent="@style/spinner_text">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/BLACK</item>
+        <item name="android:clickable">true</item>
+        <item name="android:drawablePadding">6dp</item>
+    </style>
+    <style name="info_text" parent="@style/spinner_text">
+        <item name="android:singleLine">false</item>
+    </style>
+    <style name="Title_text" parent="@style/info_text">
+        <item name="android:textColor">@color/WHITE</item>
+    </style>
+
+</resources>

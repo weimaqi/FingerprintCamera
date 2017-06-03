@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FingerprintCamera</string>
+    <string name="activity_name">j-Metrics Fingerprint Demonstration</string>
+    <string name="hint_string">Welcome j-Metrics Fingerprint Camera.\n First, open fingerprint camera usb device.</string>
+    <string name="open_string">Open usb device success.\n You can capture fingerprint image.</string>
+</resources>

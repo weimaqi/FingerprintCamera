@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LibUVCCamera</string>
+    <string name="select">選擇USB相機</string>
+    <string name="camera">相機</string>
+    <string name="refresh">刷新</string>
+    <string name="no_device">沒有找到USB相機</string>
+</resources>

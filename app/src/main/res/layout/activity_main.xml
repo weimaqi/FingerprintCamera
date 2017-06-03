@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#ff008080"
+	tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:id="@+id/top_relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_name"
+            style="@style/Title_text"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/id_txt_info"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/top_relativelayout"
+        android:layout_marginTop="20dp"
+        android:lineSpacingMultiplier="1.4"
+        android:background="@drawable/base_widget_bg"
+        style="@style/info_text"
+        android:text="@string/hint_string"/>
+
+    <com.yi.widget.UVCCameraTextureView
+        android:id="@+id/camera_view"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_below="@+id/id_txt_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+	<ImageView
+        android:id="@+id/frame_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/camera_view"
+        android:layout_alignBottom="@+id/camera_view"
+        android:layout_alignLeft="@+id/camera_view"
+        android:layout_alignRight="@+id/camera_view"
+        android:src="@drawable/border" />
+
+    <ToggleButton
+        android:id="@+id/camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:button="@drawable/switch_btn"
+        android:textOn=""
+        android:textOff="" />
+
+    <TextView
+        android:id="@+id/textViewRecordingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageViewCapture"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:visibility="invisible"
+        android:text="00:00:00" />
+
+    <ImageView
+        android:id="@+id/imageViewCapture"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:background="@null"
+        android:src="@drawable/c_shot"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageViewMode"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="10dp"
+        android:background="@null"
+        android:src="@drawable/c_mode_video"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">指纹相机</string>
+    <string name="activity_name">茂 丞 指 纹 演 示</string>
+    <string name="hint_string">欢迎使用茂丞指纹影像装置.\n 请先打开指纹影像装置</string>
+    <string name="open_string">装置开启成功.\n 可以抓取指纹图像</string>
+</resources>
